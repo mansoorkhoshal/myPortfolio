@@ -28,7 +28,7 @@ export const AboutSection = () => {
       suffix: "",
     },
     {
-      number: "01",
+      number: "1",
       label: "Years Exp",
       icon: <Calendar className="h-5 w-5" />,
       suffix: "+",
@@ -40,7 +40,7 @@ export const AboutSection = () => {
       suffix: "%",
     },
     {
-      number: "03",
+      number: "10",
       label: "Clients",
       icon: <User className="h-5 w-5" />,
       suffix: "+",
@@ -50,17 +50,13 @@ export const AboutSection = () => {
   const techStack = [
     {
       category: "Frontend",
-      items: [
-        "HTML",
-        "Tailwind",
-        "Bootstrap",
-        "JavaScript",
-        "React",
-        "Next.js",
-      ],
+      items: ["HTML", "JavaScript", "Tailwind", "React", "Next.js"],
     },
-    { category: "Backend", items: [, "MongoDB", "Node.js", "Express.js"] },
-    // { category: "Cloud", items: ["AWS", "Docker", "Vercel", "MongoDB"] },
+    { category: "Backend", items: ["MongoDB", "Express", "Node.js"] },
+    {
+      category: "Tools",
+      items: ["Git", "GitHub", "VS Code", "Version Control"],
+    },
   ];
 
   const features = [
@@ -76,15 +72,20 @@ export const AboutSection = () => {
     {
       icon: <Github className="h-5 w-5" />,
       href: "https://www.github.com/mansoorkhoshal",
+
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       href: "https://www.linkedin.com/in/mansoorkhoshal",
+
     },
-    { icon: <Twitter className="h-5 w-5" />, href: "#" },
+    { icon: <Twitter className="h-5 w-5" />, href: "#" 
+
+    },
     {
       icon: <Mail className="h-5 w-5" />,
       href: "mailto:mansoorahmad.dev44@gmail.com",
+
     },
   ];
 
@@ -115,8 +116,8 @@ export const AboutSection = () => {
   // Programmatic download function
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Sahil-resume.pdf"; // Must be in public folder
-    link.download = "Sahil-resume.pdf";
+    link.href = "/mansoorahmad_dev_CV.pdf"; // Must be in public folder
+    link.download = "mansoorahmad_dev_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -199,7 +200,7 @@ export const AboutSection = () => {
                   <div className="relative flex-shrink-0">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transition-all duration-500 group-hover:border-primary/40 group-hover:scale-105 md:group-hover:scale-110 relative">
                       <img
-                        src="/profile-logo.png"
+                        src="/profile-logo.jpg"
                         alt="Mansoor Ahmad"
                         className="w-full h-full object-cover"
                       />
@@ -330,7 +331,6 @@ export const AboutSection = () => {
                   className="flex-1 block w-full p-3 sm:p-4 bg-primary text-primary-foreground rounded-xl text-center font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg group"
                 >
                   <div className="flex items-center justify-center gap-2 sm:gap-3">
-                    <User className="h-4 sm:h-5 w-4 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
                     Start a Project
                   </div>
                 </a>
@@ -341,7 +341,6 @@ export const AboutSection = () => {
                   className="flex-1 block w-full p-3 sm:p-4 border border-border rounded-xl text-center font-semibold transition-all duration-300 hover:bg-accent hover:border-primary/30 hover:scale-105 hover:shadow-lg group"
                 >
                   <div className="flex items-center justify-center gap-2 sm:gap-3">
-                    <Download className="h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-y-0.5 transition-transform duration-300" />
                     Download Resume
                   </div>
                 </button>

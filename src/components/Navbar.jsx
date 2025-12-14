@@ -26,6 +26,7 @@ const navItems = [
   { name: "Projects", href: "#projects", icon: Briefcase },
   { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
   { name: "Contact", href: "#contact", icon: Mail },
+  { name: "Blog", href: "https://blogni.vercel.app", icon: BookOpen },
 ];
 
 const ThemeToggle = () => {
@@ -53,11 +54,7 @@ const ThemeToggle = () => {
       title="Toggle theme"
       aria-label="Toggle theme"
     >
-      {theme === "dark" ? (
-        <Sun className="w-5 h-5" />
-      ) : (
-        <Moon className="w-5 h-5" />
-      )}
+      {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
     </button>
   );
 };
@@ -152,7 +149,7 @@ export const Navbar = () => {
       >
         {/* Website Globe Button */}
         <motion.a
-          href="https://climatrack-sepia.vercel.app"
+          href="https://avoliq.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -163,15 +160,15 @@ export const Navbar = () => {
           )}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          title="Weather Application"
-          aria-label="Weather Application"
+          title="My Website"
+          aria-label="My Website"
         >
           <Globe className="w-5 h-5" />
         </motion.a>
 
         {/* GitHub Button */}
         <motion.a
-          href="https://github.com/mansoorkhoshal"
+          href="https://github.com/sahilmd01" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -190,7 +187,7 @@ export const Navbar = () => {
 
         {/* LinkedIn Button */}
         <motion.a
-          href="https://linkedin.com/in/mansoorkhoshal"
+          href="https://linkedin.com/in/codewithkinu" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -209,7 +206,7 @@ export const Navbar = () => {
 
         {/* YouTube Button */}
         <motion.a
-          href="https://www.youtube.com/@mansoorahmadkhoshal"
+          href="https://www.youtube.com/@codewithkinu"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -227,7 +224,7 @@ export const Navbar = () => {
         </motion.a>
 
         {/* Music Button */}
-        {/* <motion.button
+        <motion.button
           onClick={toggleMusic}
           disabled={!isAudioReady}
           className={cn(
@@ -240,26 +237,14 @@ export const Navbar = () => {
           whileHover={{ scale: isAudioReady ? 1.05 : 1 }}
           whileTap={{ scale: isAudioReady ? 0.95 : 1 }}
           title={
-            isAudioReady
-              ? isMusicPlaying
-                ? "Pause music"
-                : "Play music"
-              : "Loading music..."
+            isAudioReady ? (isMusicPlaying ? "Pause music" : "Play music") : "Loading music..."
           }
           aria-label={
-            isAudioReady
-              ? isMusicPlaying
-                ? "Pause music"
-                : "Play music"
-              : "Loading music"
+            isAudioReady ? (isMusicPlaying ? "Pause music" : "Play music") : "Loading music"
           }
         >
-          {isMusicPlaying ? (
-            <Volume2 className="w-5 h-5" />
-          ) : (
-            <VolumeX className="w-5 h-5" />
-          )}
-        </motion.button> */}
+          {isMusicPlaying ? <Volume2 className="w-5 h-5" /> : <VolumeX className="w-5 h-5" />}
+        </motion.button>
       </motion.div>
 
       {/* Bottom Navbar */}
@@ -289,9 +274,7 @@ export const Navbar = () => {
                 aria-label={item.name}
               >
                 <item.icon className="w-5 h-5" />
-                <span className="text-xs mt-1 hidden md:block">
-                  {item.name}
-                </span>
+                <span className="text-xs mt-1 hidden md:block">{item.name}</span>
               </a>
             ))}
             <div className="flex items-center px-2">

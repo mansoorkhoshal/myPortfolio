@@ -28,9 +28,10 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
   };
 
   const currentColors = colors[theme] || colors.dark;
-  const portfolioUrl = "mansoorahmad-portfolio.vercel.app";
+  const portfolioUrl = "sahilfullstackportfolio.netlify.app";
   const welcomeMessages = [
     "Crafting digital experiences",
+    "Software Engineer",
     "Full-stack development"
   ];
 
