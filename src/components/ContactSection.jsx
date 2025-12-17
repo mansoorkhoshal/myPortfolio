@@ -136,18 +136,18 @@ export const ContactSection = () => {
 
             <div className="space-y-4 sm:space-y-6">
               {/* Email */}
-              <div className="flex flex-wrap sm:flex-nowrap items-start sm:items-center gap-3 sm:gap-4 p-3 sm:p-4 hover:bg-accent/30 rounded-lg sm:rounded-xl transition-all duration-300">
+              <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 hover:bg-accent/30 rounded-lg sm:rounded-xl transition-all duration-300">
                 <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-primary/10 text-primary shrink-0">
                   <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
 
                 <div className="min-w-0">
-                  <p className="block text-left text-xs sm:text-sm font-medium text-muted-foreground">
+                  <p className="text-xs sm:text-sm font-medium text-muted-foreground">
                     Email
                   </p>
                   <a
                     href="mailto:mansoorahmad.dev44@gmail.com"
-                    className="block text-sm sm:text-base font-medium hover:text-primary transition-colors break-all sm:break-normal"
+                    className="block text-sm sm:text-base font-medium hover:text-primary transition-colors break-words whitespace-normal"
                   >
                     mansoorahmad.dev44@gmail.com
                   </a>
@@ -211,7 +211,7 @@ export const ContactSection = () => {
                   {
                     icon: Twitter,
                     label: "Twitter",
-                    url: "#",
+                    url: "https://www.linkedin.com/in/mansoorkhoshal",
                   },
                   {
                     icon: Github,

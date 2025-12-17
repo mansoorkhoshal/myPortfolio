@@ -13,27 +13,27 @@ export const TestimonialSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Mr Zakir",
-      role: "Cybersecurity expert at Arfa Karim",
-      content: `Working with Sahil was seamless from day one. Not only did they deliver a full-stack solution ahead of schedule, but they also communicated clearly throughout the project. It's rare to find a developer who understands both the tech and the business side so well`,
+      name: "Saad Ahmad",
+      role: "CEO at KhoshalTech Company",
+      content: `Working with Mansoor Ahmad was seamless from day one. Not only did they deliver a full-stack solution ahead of schedule, but they also communicated clearly throughout the project. It's rare to find a developer who understands both the tech and the business side so well`,
       rating: 5,
-      image: "/testimonials/alex-johnson.png"
+      image: "/testimonials/saadahmad.png"
     },
     {
       id: 2,
-      name: "Yousaf Anwar",
-      role: "Senior FullStack Developer at DesignHub",
+      name: "Sajida Ahmad",
+      role: "Senior UX Designer at DesignHub",
       content: `I've reviewed hundreds of portfolios, and his work is truly exceptional. Tway the animations guide attention while maintaining performance is masterful. The gradient elements add depth without overwhelming.`,
       rating: 5,
-      image: "/testimonials/maria-chen.png"
+      image: "/testimonials/sajidaAhmad.png"
     },
     {
       id: 3,
-      name: "Saad Ahmad",
-      role: "CEO at khoshal",
-      content: `From wireframes to deployment, Sahil owned the entire stack with confidence and creativity. The final product is fast, reliable, and looks incredible. I wouldn't hesitate to work with them again.`,
+      name: "Zakir Ullah",
+      role: "Cyber Security Engineer at HaxorHouse",
+      content: `From wireframes to deployment, Mansoor Ahamd owned the entire stack with confidence and creativity. The final product is fast, reliable, and looks incredible. I wouldn't hesitate to work with them again.`,
       rating: 5,
-      image: "/testimonials/David Wilson.png"
+      image: "/testimonials/zakirUllah.jpg"
     },
   ];
 
@@ -270,7 +270,7 @@ export const TestimonialSection = () => {
                 className="p-1 sm:p-2 rounded-full border border-muted-foreground/20 hover:border-primary/50 bg-background/80 backdrop-blur-sm transition-all hover:scale-110"
                 aria-label="Next testimonial"
               >
-                <ChevronRight className="h-4 w-4 sm:h-5 sm:h-5" />
+                <ChevronRight className="h-4 w-4 sm:h-5" />
               </button>
             </div>
           )}
