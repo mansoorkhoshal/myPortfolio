@@ -50,9 +50,9 @@ export const AboutSection = () => {
   const techStack = [
     {
       category: "Frontend",
-      items: ["HTML", "JavaScript", "Tailwind", "React", "Next.js"],
+      items: ["HTML", "JavaScript", "Tailwind CSS", "Bootstrap", "React"],
     },
-    { category: "Backend", items: ["MongoDB", "Express", "Node.js"] },
+    { category: "Backend", items: ["MongoDB", "Express", "Node.js", "Next.js"] },
     {
       category: "Tools",
       items: ["Git", "GitHub", "VS Code", "Version Control"],
@@ -79,7 +79,8 @@ export const AboutSection = () => {
       href: "https://www.linkedin.com/in/mansoorkhoshal",
 
     },
-    { icon: <Twitter className="h-5 w-5" />, href: "#" 
+    {
+      icon: <Twitter className="h-5 w-5" />, href: "#"
 
     },
     {
@@ -133,17 +134,15 @@ export const AboutSection = () => {
         <div
           className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-primary/5 rounded-full blur-3xl transition-all duration-1000 ease-out"
           style={{
-            transform: `translate(${mousePosition.x * 0.02}px, ${
-              mousePosition.y * 0.02
-            }px)`,
+            transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02
+              }px)`,
           }}
         />
         <div
           className="absolute w-60 sm:w-80 h-60 sm:h-80 bg-secondary/5 rounded-full blur-3xl transition-all duration-1500 ease-out"
           style={{
-            transform: `translate(${mousePosition.x * -0.03}px, ${
-              mousePosition.y * -0.03
-            }px)`,
+            transform: `translate(${mousePosition.x * -0.03}px, ${mousePosition.y * -0.03
+              }px)`,
           }}
         />
         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -222,11 +221,10 @@ export const AboutSection = () => {
                       {achievements.map((achievement, index) => (
                         <div
                           key={index}
-                          className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${
-                            counter === index
+                          className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${counter === index
                               ? "bg-primary/10 border-primary/50"
                               : ""
-                          }`}
+                            }`}
                         >
                           <div className="flex items-center gap-2 justify-center md:justify-start">
                             {achievement.icon}
@@ -252,11 +250,10 @@ export const AboutSection = () => {
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
-                      className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 ${
-                        activeTab === tab
+                      className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 ${activeTab === tab
                           ? "text-primary border-b-2 border-primary"
                           : "text-muted-foreground hover:text-foreground"
-                      }`}
+                        }`}
                     >
                       {tab.charAt(0).toUpperCase() + tab.slice(1)}
                     </button>
@@ -367,7 +364,7 @@ export const AboutSection = () => {
 
             {/* Why Choose Me */}
             <div className="bg-card/50 border border-border rounded-3xl p-4 sm:p-6 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:shadow-3xl hover:border-primary/40 hover:bg-card/60">
-              <h3 className="text-base sm:text-xl font-bold mb-3 sm:mb-4 flex items-center gap-2">
+              <h3 className="text-base sm:text-xl font-bold mb-9 sm:mb-10 flex items-center gap-2">
                 <Star className="h-4 sm:h-5 w-4 sm:w-5 text-primary" />
                 Why Choose Me
               </h3>
