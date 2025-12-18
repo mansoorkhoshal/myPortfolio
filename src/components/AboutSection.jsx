@@ -50,9 +50,9 @@ export const AboutSection = () => {
   const techStack = [
     {
       category: "Frontend",
-      items: ["HTML", "JavaScript", "Tailwind CSS", "Bootstrap", "React"],
+      items: ["HTML", "JavaScript", "Tailwind", "React", "Next.js"],
     },
-    { category: "Backend", items: ["MongoDB", "Express", "Node.js", "Next.js"] },
+    { category: "Backend", items: ["MongoDB", "Express", "Node.js"] },
     {
       category: "Tools",
       items: ["Git", "GitHub", "VS Code", "Version Control"],
@@ -127,7 +127,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative py-16 md:py-28 px-4 sm:px-6 lg:px-12 bg-gradient-to-br from-background via-background to-primary/5 overflow-hidden"
+      className="relative py-16 md:py-28 sm:px-6 lg:px-12 bg-gradient-to-br from-background via-background to-primary/5 overflow-hidden"
     >
       {/* Background Shapes */}
       <div className="absolute inset-0 overflow-hidden">
@@ -364,7 +364,7 @@ export const AboutSection = () => {
 
             {/* Why Choose Me */}
             <div className="bg-card/50 border border-border rounded-3xl p-4 sm:p-6 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:shadow-3xl hover:border-primary/40 hover:bg-card/60">
-              <h3 className="text-base sm:text-xl font-bold mb-9 sm:mb-10 flex items-center gap-2">
+              <h3 className="text-base sm:text-xl font-bold mb-3 sm:mb-4 flex items-center gap-2">
                 <Star className="h-4 sm:h-5 w-4 sm:w-5 text-primary" />
                 Why Choose Me
               </h3>
@@ -396,11 +396,11 @@ export const AboutSection = () => {
                   </span>
                 </div>
                 <span className="text-xs sm:text-sm text-muted-foreground bg-green-500/10 text-green-600 px-2 py-1 rounded-lg">
-                  For new projects
+                  <a href="#contact">For new projects</a>
                 </span>
               </div>
-              <div className="text-[10px] sm:text-xs text-muted-foreground text-center bg-background/50 rounded-lg p-1 sm:p-2">
-                ⚡ Response time: Under 24 hours
+              <div className="text-[10px] sm:text-xs text-muted-foreground text-center bg-background/50 rounded-lg p-1   sm:p-2">
+              Response time: Under 24 hours
               </div>
             </div>
           </div>

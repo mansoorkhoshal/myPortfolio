@@ -157,8 +157,8 @@ export const HeroSection = () => {
           </div>
 
           <motion.div className="flex-1 flex justify-center lg:justify-end w-full" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-            <div className="relative w-full max-w-md">
-              <motion.div className="bg-background/90 border border-border rounded-2xl p-8 backdrop-blur-sm shadow-2xl w-full group hover:shadow-3xl transition-all duration-500" whileHover={{ y: -4 }} transition={{ type: "spring", stiffness: 400, damping: 25 }}>
+            <div className="relative w-full max-w-md ">
+              <motion.div className="bg-background/90 border border-border rounded-2xl p-4 backdrop-blur-sm shadow-2xl w-full group hover:shadow-3xl transition-all duration-500" whileHover={{ y: -4 }} transition={{ type: "spring", stiffness: 400, damping: 25 }}>
 
                 <div className="flex items-center gap-4 mb-6">
                   <div className="flex gap-2">

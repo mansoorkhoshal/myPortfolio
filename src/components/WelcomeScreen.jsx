@@ -190,7 +190,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
 
             {phase >= 1 && (
               <motion.h1
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-tight"
+                className="text-5xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-tight"
                 style={{ color: currentColors.primary }}
                 variants={contentVariants}
               >
@@ -231,7 +231,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
                   )}
                 </motion.div>
                 <motion.p
-                  className="mt-2 sm:mt-4 text-xs sm:text-sm md:text-base"
+                  className="mt-2 sm:mt-4 text-xl sm:text-sm md:text-base"
                   style={{ color: currentColors.muted }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -260,7 +260,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
                   }}
                 />
                 <motion.p
-                  className="mt-2 sm:mt-4 text-xs sm:text-sm opacity-70"
+                  className="mt-2 sm:mt-4 text-xs sm:text-xl opacity-70"
                   style={{ color: currentColors.muted }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
