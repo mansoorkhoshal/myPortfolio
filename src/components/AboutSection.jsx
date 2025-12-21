@@ -28,7 +28,7 @@ export const AboutSection = () => {
       suffix: "",
     },
     {
-      number: "3+",
+      number: "3",
       label: "Month Intership",
       icon: <Calendar className="h-8 w-8" />,
       suffix: "+",
