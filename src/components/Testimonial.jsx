@@ -13,7 +13,7 @@ export const TestimonialSection = () => {
     {
       id: 1,
       name: "Saad Ahmad",
-      role: "CEO at KhoshalTech Company",
+      role: "Network Engineer",
       content:
         "Working with Mansoor Ahmad was seamless from day one. Not only did they deliver a full-stack solution ahead of schedule, but they also communicated clearly throughout the project.",
       rating: 5,

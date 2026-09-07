@@ -123,7 +123,7 @@ export const ProjectsSection = () => {
   );
 
   return (
-    /* ⬇️ REST OF YOUR JSX IS 100% UNCHANGED ⬇️ */
+    /* REST OF YOUR JSX IS 100% UNCHANGED */
     /* (intentionally not modified as requested) */
     <section
       id="projects"
